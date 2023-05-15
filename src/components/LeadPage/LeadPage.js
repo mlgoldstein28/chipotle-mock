@@ -17,7 +17,7 @@ const LeadPage = () => {
                       >
                 </video>
             </div>
-            <div className="text-center mt-3">
+            <div className="text-center mt-1 mb-1">
               <div className={`text-center d-flex justify-content-center`}>
               <img src={chipBadge} alt="" className={`${styles.badge}`}/>
                 <p className={` ${styles.subText}`}>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</p>
@@ -28,7 +28,7 @@ const LeadPage = () => {
                     </div>
                 </div>
               </div>
-            <hr />
+            <hr className="m-0"/>
         </div>
     )
 }

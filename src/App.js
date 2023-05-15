@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Navbar from './components/Navbar/Navbar';
 import LeadPage from './components/LeadPage/LeadPage';
+import MenuItems from './components/MenuItems/MenuItems';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Navbar />
       <LeadPage />
+      <MenuItems />
     </div>
   );
 }

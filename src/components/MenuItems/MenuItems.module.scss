@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+$colorMain: rgb(74,9,9);
+$colorSecond: rgb(181, 56, 56);
+$colorThird: rgb(192, 145, 27);
+
+.menuItem {
+    margin-bottom: 25px;
+}
+
+.menuItem:hover {
+    padding-bottom: 0px;
+    cursor: pointer;
+
+    .order {
+        opacity: 1;
+    }
+
+    .image {
+        width: 95%;
+        height: 45%;
+        margin-bottom: 0px
+    }
+
+
+}
+
+
+.image {
+    width: 90%;
+    height: 40%;
+    margin-bottom: 10px
+}
+
+
+.header {
+    color: $colorMain;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.order {
+    color: $colorThird;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0
+}

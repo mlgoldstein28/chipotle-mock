@@ -1,7 +1,7 @@
-import videoPastor from '../../images/Chipotle_ChickenAlPastor.mp4';
+import videoPastor from '../../media/Chipotle_ChickenAlPastor.mp4';
 import React from 'react';
 import styles from './LeadPage.module.scss';
-import chipBadge from '../../images/chipBadge.png'
+import chipBadge from '../../media/chipBadge.png'
 
 const LeadPage = () => {
     return(

@@ -1,5 +1,6 @@
 $colorMain: rgb(74,9,9);
 $colorSecond: rgb(181, 56, 56);
+$colorThird: rgb(192, 145, 27);
 
 .vid {
  object-fit: fill;
@@ -51,10 +52,10 @@ $colorSecond: rgb(181, 56, 56);
 .signIn {
     margin-left: 10px;
     font-size: 20px;
-    color: rgb(192, 145, 27);
+    color: $colorThird
 }
 
 .signIn:hover {
     cursor: pointer;
-    color: rgb(192, 145, 27);
+    color: $colorThird
 }

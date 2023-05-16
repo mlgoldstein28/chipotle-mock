@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.scss';
 import logo from '../../media/Chipotle_Mexican_Grill_logo.svg.png';
 import secondaryLogo from '../../media/Screen Shot 2023-05-11 at 10.49.46 AM.png';
@@ -7,14 +7,31 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import bag from '../../media/Screen Shot 2023-05-11 at 5.45.56 PM.png';
 
 const Navbar = () => {
+  const [scrollState, setScrollState] = useState(0);
+  let fixed = ''
+
+
+const handleScroll = (event) => {
+  setScrollState(window.scrollY);
+  if (scrollState >= 32.5) {
+    document.getElementById('mainNav').classList.add('fixed-top');
+  }
+  else {
+    document.getElementById('mainNav').classList.remove('fixed-top');
+  }
+}
+
+window.addEventListener('scroll', handleScroll)
+  
+    
 
     return (
-    <div className="">
-        <nav className={`navbar navbar-light ${styles.secondaryNav}`}>
+    <div className="Navbar">
+        <nav id="secondaryNav" className={`navbar navbar-light ${styles.secondaryNav}`}>
           <button style={{opacity: 0}} disabled></button>
-          <a className={` ${styles.secondNavText} navbar-brand mb-6 ${styles.secondNavText}`} href="/">ENABLE ACCESSIBILITY</a>
+          <a className={` ${styles.secondNavText} navbar-brand mb-6 ${styles.secondNavText}`} href="/">ENABLE ACCESSIBILITY {scrollState}</a>
         </nav>
-        <nav className={`navbar navbar navbar-expand-lg navbar-light bg-white border-bottom border-default fixed ${styles.mainNav}`}>
+        <nav id="mainNav" onScroll={handleScroll} className={`navbar navbar-expand-lg navbar-light bg-white border-bottom border-default ${styles.mainNav}`}>
           <a className="navbar-brand" href="/"><img className={styles.image} src={logo} alt="logo" /></a>
           <div className={`${styles.signIn} m-3`}>
                 <FontAwesomeIcon className='ms-3 fs-4' icon={faUser} />

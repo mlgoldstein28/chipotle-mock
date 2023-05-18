@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import bag from '../../media/Screen Shot 2023-05-11 at 5.45.56 PM.png';
 
-const Navbar = () => {
+const Navbar = ({display, setDisplay}) => {
 
   /*const [scrollState, setScrollState] = useState(0);
 
@@ -22,18 +22,22 @@ const Navbar = () => {
   }
 
 window.addEventListener('scroll', handleScroll)*/
-  
-    
 
+const handleClick = (event) => {
+  setDisplay(true);
+  document.body.style.overflow = "hidden";
+  console.log(display);
+}
+  
     return (
     <div className="Navbar">
         <nav id="secondaryNav" className={`navbar navbar-light ${styles.secondaryNav}`}>
           <button style={{opacity: 0}} disabled></button>
-          <a className={` ${styles.secondNavText} navbar-brand mb-6 ${styles.secondNavText}`} href="/">ENABLE ACCESSIBILITY</a>
+          <a className={`navbar-brand mb-6 ${styles.secondNavText}`} href="/">ENABLE ACCESSIBILITY</a>
         </nav>
-        <nav id="mainNav" className={`navbar navbar-expand-lg navbar-light bg-white border-bottom border-default ${styles.mainNav} fixed-top`}>
+        <nav id="mainNav" className={`navbar navbar-expand-lg navbar-light bg-white border-bottom border-default fixed-top ${styles.mainNav}`}>
           <a className="navbar-brand" href="/"><img className={styles.image} src={logo} alt="logo" /></a>
-          <div className={`${styles.signIn} m-3`}>
+          <div onClick={handleClick} className={`${styles.signIn} m-3`}>
                 <FontAwesomeIcon className='ms-3 fs-4' icon={faUser} />
                 <span className={` ${styles.signInText} m-3 fw-bold`}> SIGN IN</span>
           </div>
@@ -49,7 +53,7 @@ window.addEventListener('scroll', handleScroll)*/
                 <span className=""><img src={secondaryLogo} alt="logo" className={`${styles.secondLogo} m-auto`} /></span>
                 <span className="fs-4"> | </span><span className={styles.buttonText}>FIND A CHIPOTLE</span>
               </button>
-                <img src={bag} alt='cart' className="me-5" style={{width: "21px", height: "33px"}} />
+              <img src={bag} alt='cart' className="me-5" style={{width: "21px", height: "33px"}} />
             </div>
         </nav>
     </div>

@@ -24,6 +24,13 @@ $colorThird: rgb(192, 145, 27);
     font-family: 'Passion One';
     color: white;
     font-weight: bold;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.showHide {
+    display: none;
 }
 
 .new {

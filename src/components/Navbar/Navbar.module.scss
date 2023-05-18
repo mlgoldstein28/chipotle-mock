@@ -3,6 +3,10 @@
 $colorMain: rgb(74,9,9);
 $colorSecond: rgb(181, 56, 56);
 
+* {
+    overflow-anchor: none;
+}
+
 .tabs {
     color: $colorMain;
     margin-left: 15px;
@@ -92,13 +96,12 @@ $colorSecond: rgb(181, 56, 56);
     text-align: center;
 }
 
+.signIn:hover {
+    cursor: pointer;
+}
 .signInText {
     font-size: 14px;
-    opacity: .5
+    opacity: .5;
+
 
 }
-
-* {
-    overflow-anchor: none;
-}
-

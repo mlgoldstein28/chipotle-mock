@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './LeadPage.module.scss';
 import chipBadge from '../../media/chipBadge.png'
 
-const LeadPage = () => {
+const LeadPage = ({display}) => {
     return(
         <div className="">
             <div className={`ratio ${styles.vidContainer}`}>
@@ -16,7 +16,7 @@ const LeadPage = () => {
                     type="video/mp4"  
                       >
                 </video>
-                <div className={`text-center ${styles.vidText}`}>
+                <div className={`text-center container ${styles.vidText} ${display ? styles.showHide : null}`}>
                   <div className={`${styles.new}`}>NEW</div>
                   <div className={`${styles.vidHead}`}>
                     <h1 className={`${styles.chicken}`}>CHICKEN</h1>
@@ -27,18 +27,20 @@ const LeadPage = () => {
                     balanced with a <br/> splash of pineapple, fresh lime, and cilantro.</p>
                   <a href="#menu" className={`text-decoration-none`}><div className={`${styles.orderButton}`}>ORDER NOW</div></a>
                 </div>
+                <div className={`${display ? styles.display : null}`} >
+                </div>
             </div>
             <div className="text-center mt-1 mb-1">
               <div className={`text-center d-flex justify-content-center`}>
-              <img src={chipBadge} alt="" className={`${styles.badge}`}/>
+                <img src={chipBadge} alt="" className={`${styles.badge}`}/>
                 <p className={` ${styles.subText}`}>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</p>
-                    <button className={styles.account}>CREATE AN ACCOUNT</button>
-                  <div className={styles.subText} id="menu">
+                <button className={styles.account}>CREATE AN ACCOUNT</button>
+                <div className={styles.subText} id="menu">
                     <span className={styles.or}> OR </span>
                     <a className={styles.signIn}> SIGN IN</a>
-                    </div>
                 </div>
               </div>
+            </div>
             <hr className="m-0"/>
         </div>
     )

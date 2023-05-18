@@ -7,6 +7,11 @@ $colorSecond: rgb(181, 56, 56);
     overflow-anchor: none;
 }
 
+.Navbar {
+    overflow: hidden;
+    z-index: 9999;
+}
+
 .tabs {
     color: $colorMain;
     margin-left: 15px;

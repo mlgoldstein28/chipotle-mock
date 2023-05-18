@@ -27,8 +27,6 @@ const LeadPage = ({display}) => {
                     balanced with a <br/> splash of pineapple, fresh lime, and cilantro.</p>
                   <a href="#menu" className={`text-decoration-none`}><div className={`${styles.orderButton}`}>ORDER NOW</div></a>
                 </div>
-                <div className={`${display ? styles.display : null}`} >
-                </div>
             </div>
             <div className="text-center mt-1 mb-1">
               <div className={`text-center d-flex justify-content-center`}>

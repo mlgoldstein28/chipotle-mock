@@ -5,7 +5,7 @@ import "bootstrap/dist/js/bootstrap";
 import Navbar from './components/Navbar/Navbar';
 import LeadPage from './components/LeadPage/LeadPage';
 import MenuItems from './components/MenuItems/MenuItems';
-import SignIn from './components/SignIn/SignIn.js';
+import SignIn from './components/Account/SignIn/SignIn.js';
 
 
 function App() {

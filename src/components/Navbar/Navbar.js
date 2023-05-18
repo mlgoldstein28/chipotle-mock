@@ -30,7 +30,7 @@ const handleClick = (event) => {
 }
   
     return (
-    <div className="Navbar">
+    <div className={styles.Navbar}>
         <nav id="secondaryNav" className={`navbar navbar-light ${styles.secondaryNav}`}>
           <button style={{opacity: 0}} disabled></button>
           <a className={`navbar-brand mb-6 ${styles.secondNavText}`} href="/">ENABLE ACCESSIBILITY</a>

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import bag from '../../media/Screen Shot 2023-05-11 at 5.45.56 PM.png';
 
-const Navbar = ({display, setDisplay}) => {
+const Navbar = ({handleClick}) => {
 
   /*const [scrollState, setScrollState] = useState(0);
 
@@ -23,11 +23,6 @@ const Navbar = ({display, setDisplay}) => {
 
 window.addEventListener('scroll', handleScroll)*/
 
-const handleClick = (event) => {
-  setDisplay(true);
-  document.body.style.overflow = "hidden";
-  console.log(display);
-}
   
     return (
     <div className={styles.Navbar}>
@@ -49,7 +44,7 @@ const handleClick = (event) => {
             <a className={`nav-item nav-link ${styles.tabs} me-2`} href="/">NUTRITION</a>
           </div>
             <div className="ms-1">
-              <button className={`${styles.findButton} fs-6 me-5`}>
+              <button type="button" className={`${styles.findButton} fs-6 me-5`}>
                 <span className=""><img src={secondaryLogo} alt="logo" className={`${styles.secondLogo} m-auto`} /></span>
                 <span className="fs-4"> | </span><span className={styles.buttonText}>FIND A CHIPOTLE</span>
               </button>

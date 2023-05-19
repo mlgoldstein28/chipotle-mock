@@ -3,7 +3,13 @@ import React from 'react';
 import styles from './LeadPage.module.scss';
 import chipBadge from '../../media/chipBadge.png'
 
-const LeadPage = ({display}) => {
+const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
+  const handleClickAcc = () => {
+    setHide(1);
+    setDisplay(true);
+    window.scrollTo(0,0)
+  }
+
     return(
         <div className="">
             <div className={`ratio ${styles.vidContainer}`}>
@@ -32,10 +38,10 @@ const LeadPage = ({display}) => {
               <div className={`text-center d-flex justify-content-center`}>
                 <img src={chipBadge} alt="" className={`${styles.badge}`}/>
                 <p className={` ${styles.subText}`}>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</p>
-                <button className={styles.account}>CREATE AN ACCOUNT</button>
+                <button onClick={handleClickAcc} className={styles.account}>CREATE AN ACCOUNT</button>
                 <div className={styles.subText} id="menu">
                     <span className={styles.or}> OR </span>
-                    <a className={styles.signIn}> SIGN IN</a>
+                    <a onClick={handleClick}className={styles.signIn}> SIGN IN</a>
                 </div>
               </div>
             </div>

@@ -3,11 +3,10 @@ import styles from './SignIn.module.scss';
 import badge from '../../../media/chipBadge.png';
 import CreateAccount from '../CreateAccount/CreateAccount';
 
-const SignIn = ({display}) => {
-  let [slide, setSlide] = useState(false);
-  let [hide, setHide] = useState(false)
+const SignIn = ({display, setHide, hide}) => {
+  const [slide, setSlide] = useState(false);
 
-  const handleClick = (event) => {
+  const handleClickAccount = (event) => {
       setSlide(true);
       setTimeout(() => {
         setHide(1)
@@ -15,8 +14,8 @@ const SignIn = ({display}) => {
       
   }
     return (
-        <div>
-            <div className={`${display ? styles.display : `d-none`}`}>
+        <div className={`${display ? styles.display : `d-none`}`}>
+            <div>
               <div className="text-center">
                 <img src={badge} alt="badge" className={`${styles.img}`} />
               </div>
@@ -36,7 +35,7 @@ const SignIn = ({display}) => {
                         <h1 className={styles.createHead}>NOT A MEMBER?</h1>
                         <h3 className={styles.createSubHead}>JOIN REWARDS. GET REWARDED.</h3>
                       </div>
-                        <button onClick={handleClick}className={styles.createButton}>CREATE AN ACCOUNT</button>
+                        <button onClick={handleClickAccount} className={styles.createButton}>CREATE AN ACCOUNT</button>
                     </div>
                   </div>
                 </div>

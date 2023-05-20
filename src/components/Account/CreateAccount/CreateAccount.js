@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from '../SignIn/SignIn.module.scss';
 import stylesAcc from './CreateAccount.module.scss';
+
 const CreateAccount = ({slide, hide}) => {
 
     const [firstName, setFirstName] = useState('');
@@ -26,18 +27,9 @@ const CreateAccount = ({slide, hide}) => {
 
     const handleSubmit = (e) => {
         console.log(firstName, lastName, email, password)
-        console.log(users)
     }
 
-    function UserDB(firstName, lastName, email, password) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.email = email;
-            this.password = password
-        }
-
-    let users = new UserDB(firstName, lastName, email, password)
-
+    
     return (
         <div>
             <div id="slidingIn" className={`${hide === false ? styles.hide : null} ${slide ? styles.slideIn : null}`}>

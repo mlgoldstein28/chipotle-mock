@@ -1,0 +1,14 @@
+
+.bagContainer {
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: white;
+}
+
+.hide {
+    display: none;
+}

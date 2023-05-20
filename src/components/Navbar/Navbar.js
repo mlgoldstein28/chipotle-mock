@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import bag from '../../media/Screen Shot 2023-05-11 at 5.45.56 PM.png';
 
-const Navbar = ({handleClick}) => {
+const Navbar = ({handleClick, handleBag, bagDisplay}) => {
 
   /*const [scrollState, setScrollState] = useState(0);
 
@@ -48,7 +48,7 @@ window.addEventListener('scroll', handleScroll)*/
                 <span className=""><img src={secondaryLogo} alt="logo" className={`${styles.secondLogo} m-auto`} /></span>
                 <span className="fs-4"> | </span><span className={styles.buttonText}>FIND A CHIPOTLE</span>
               </button>
-              <img src={bag} alt='cart' className="me-5" style={{width: "21px", height: "33px"}} />
+              <img onClick={handleBag} src={bag} alt='cart' className={styles.bag}/>
             </div>
         </nav>
     </div>

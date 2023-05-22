@@ -68,12 +68,12 @@ $colorSecond: rgb(181, 56, 56);
     line-height: 30px;
     text-align: center;
     text-decoration: none;
-    background-image: linear-gradient(90deg, $colorMain 15%, rgb(125, 61, 56) 85%);
+    background-image: linear-gradient(90deg, rgb(108, 39, 39), rgb(108, 39, 39));
     background-size: 0% 3em;
     background-position-y: 100%;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition: background-size 0.4s ease-in-out;
+    transition: background-size 0.3s ease-in-out;
 }
 
 .buttonText {
@@ -103,6 +103,7 @@ $colorSecond: rgb(181, 56, 56);
 .signIn:hover {
     cursor: pointer;
 }
+
 .signInText {
     font-size: 14px;
     opacity: .5;

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.scss';
 import logo from '../../media/Chipotle_Mexican_Grill_logo.svg.png';
 import secondaryLogo from '../../media/pepper-small-white@3x.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import bag from '../../media/Screen Shot 2023-05-11 at 5.45.56 PM.png';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({handleClick, handleBag}) => {
 
@@ -37,11 +37,11 @@ window.addEventListener('scroll', handleScroll)*/
                 <span className={` ${styles.signInText} m-3 fw-bold`}> SIGN IN</span>
           </div>
           <div className={`navbar-nav ms-auto fw-bold`}>
-            <a className={`nav-item nav-link ${styles.tabs}`} href="/">ORDER</a>
-            <a className={`nav-item nav-link ${styles.tabs}`} href="/">CATERING</a>
-            <a class={`nav-item nav-link ${styles.tabs}`} href="/">REWARDS</a>
-            <a className={`nav-item nav-link ${styles.tabs}`} href="/">OUR VALUES</a>
-            <a className={`nav-item nav-link ${styles.tabs} me-2`} href="/">NUTRITION</a>
+            <NavLink to="/order"><div className={`nav-item nav-link ${styles.tabs}`}>ORDER</div></NavLink>
+            <NavLink to="/catering"><div className={`nav-item nav-link ${styles.tabs}`}>CATERING</div></NavLink>
+            <NavLink to="/rewards"><div class={`nav-item nav-link ${styles.tabs}`}>REWARDS</div></NavLink> 
+            <NavLink to="/our-values"><div className={`nav-item nav-link ${styles.tabs}`}>OUR VALUES</div></NavLink>
+            <NavLink to="/nutrition"><div className={`nav-item nav-link ${styles.tabs} me-2`}>NUTRITION</div></NavLink>
           </div>
             <div className="ms-1">
               <button type="button" className={`${styles.findButton} fs-6 me-5`}>

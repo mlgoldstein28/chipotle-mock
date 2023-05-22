@@ -8,9 +8,28 @@ import LeadPage from './components/LeadPage/LeadPage';
 import MenuItems from './components/MenuItems/MenuItems';
 import SignIn from './components/Account/SignIn/SignIn.js';
 import ShoppingBag from './components/ShoppingBag/ShoppingBag';
+import UnderConstruction from './components/UnderConstruction/UnderConstruction';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
 function App() {
+
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/order' element={<UnderConstruction className="App"/>} />
+        <Route path='/catering' element={<UnderConstruction className="App"/>} />
+        <Route path='/rewards' element={<UnderConstruction className="App"/>} />
+        <Route path='/our-values' element={<UnderConstruction className="App"/>} />
+        <Route path='/nutrition' element={<UnderConstruction className="App"/>} />
+      </Routes>
+    </Router>
+  )
+}
+
+
+function Home() {
   const [display, setDisplay] = useState(false);
   const [hide, setHide] = useState(false);
   const [bagDisplay, setBagDisplay] = useState(false);

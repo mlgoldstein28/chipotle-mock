@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <SignIn display={display}
+              setDisplay={setDisplay}
               hide={hide}
               setHide={setHide} />
       <ShoppingBag bagDisplay={bagDisplay}

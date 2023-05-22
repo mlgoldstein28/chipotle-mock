@@ -25,15 +25,31 @@ $colorThird: rgb(192, 145, 27);
 }
 //Sign In Form
 
+.x {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size: 26px;
+    color: rgba(82, 30, 30, 0.625);
+    padding: 7px;
+    border-radius: 100%;
+    background-color: rgba(167, 167, 127, 0.115);
+}
+
+.x:hover {
+    cursor: pointer;
+}
+
 .formContainer {
-    width: 30%;
+    width: 450px;
     margin-top: 10px
 }
 
 .img {
-    width: 7%;
-    height: 7%;
+    width: 90px;
+    height: 90px;
     margin-top: 50px;
+    margin-left: 65px;
 }
 
 .head {

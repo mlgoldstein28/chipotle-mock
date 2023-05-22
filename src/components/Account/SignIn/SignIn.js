@@ -2,8 +2,10 @@ import {useState} from 'react';
 import styles from './SignIn.module.scss';
 import badge from '../../../media/chipBadge.png';
 import CreateAccount from '../CreateAccount/CreateAccount';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
-const SignIn = ({display, setHide, hide}) => {
+const SignIn = ({display, setDisplay, setHide, hide}) => {
   const [slide, setSlide] = useState(false);
 
   const handleClickAccount = (event) => {
@@ -15,7 +17,15 @@ const SignIn = ({display, setHide, hide}) => {
   }
     return (
         <div className={`${display ? styles.display : `d-none`}`}>
-            <div>
+          <div>
+          <FontAwesomeIcon icon={faX} onClick={(() => {
+              setDisplay(false);
+              setHide(false);
+              setSlide(false);
+              document.body.style.overflow='visible'
+            })} className={styles.x}/>
+          </div>
+          <div>
               <div className="text-center">
                 <img src={badge} alt="badge" className={`${styles.img}`} />
               </div>
@@ -41,7 +51,7 @@ const SignIn = ({display, setHide, hide}) => {
                 </div>
               <CreateAccount slide={slide} 
                              hide={hide}/>
-            </div>
+          </div>
         </div>
     )
 }

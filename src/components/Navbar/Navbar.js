@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.scss';
 import logo from '../../media/Chipotle_Mexican_Grill_logo.svg.png';
-import secondaryLogo from '../../media/Screen Shot 2023-05-11 at 10.49.46 AM.png';
+import secondaryLogo from '../../media/pepper-small-white@3x.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import bag from '../../media/Screen Shot 2023-05-11 at 5.45.56 PM.png';
 
-const Navbar = ({handleClick, handleBag, bagDisplay}) => {
+const Navbar = ({handleClick, handleBag}) => {
 
   /*const [scrollState, setScrollState] = useState(0);
 

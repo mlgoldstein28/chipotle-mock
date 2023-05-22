@@ -33,7 +33,9 @@ function App() {
       <SignIn display={display}
               hide={hide}
               setHide={setHide} />
-      <ShoppingBag bagDisplay={bagDisplay}/>
+      <ShoppingBag bagDisplay={bagDisplay}
+                   setBagDisplay={setBagDisplay}
+                   />
       <div className={`${bagDisplay ? styles.blur : null}`}>
         <div className={bagDisplay ? styles.dim : styles.hide}></div>
         <Navbar handleClick={handleClick} 
@@ -44,7 +46,8 @@ function App() {
                   setDisplay={setDisplay}
                   handleClick={handleClick}
                   hide={hide}
-                  setHide={setHide}/>
+                  setHide={setHide}
+                  />
         <MenuItems />
       </div>
     </div>

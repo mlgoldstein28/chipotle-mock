@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import styles from './ShoppingBag.module.scss';
 import secondaryLogo from '../../media/pepper-small-white@3x.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

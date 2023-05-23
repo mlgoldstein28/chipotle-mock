@@ -20,6 +20,18 @@ $colorThird: rgb(192, 145, 27);
     z-index: 9999;
 }
 
+@keyframes scaleDown {
+    from {transform: scale(1); opacity: 1}
+    to {transform: scale(0);opacity: 0; display: none}
+}
+
+.shrink {
+    animation-name: scaleDown;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
 .showHide {
     display: none;
 }

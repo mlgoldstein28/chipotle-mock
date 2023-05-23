@@ -9,6 +9,37 @@ $colorSecond: rgb(181, 56, 56);
 
 .Navbar {
     overflow: hidden;
+    margin: auto;
+}
+
+.secondaryNav {
+    height: 43px;
+    background-color: rgb(239, 239, 239);
+}
+
+.secondNavText {
+    color: $colorMain;
+    margin-right: 40px;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Hubot-Sans';
+}
+
+.secondNavText:hover {
+    text-decoration: underline;
+    color: rgb(139, 121, 21)
+}
+
+.menu {
+    display: none;
+    font-size: 24px;
+    margin-left: 10px;
+    color: $colorMain
+}
+
+.menu:hover {
+    cursor: pointer
 }
 
 .tabs {
@@ -30,31 +61,13 @@ $colorSecond: rgb(181, 56, 56);
 }
 
 
-.secondaryNav {
-    height: 43px;
-    background-color: rgb(239, 239, 239);
-}
-
-.secondNavText {
-    color: $colorMain;
-    margin-right: 40px;
-    font-size: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Hubot-Sans';
-}
-
-.secondNavText:hover {
-    text-decoration: underline;
-    color: rgb(139, 121, 21)
-}
-
 .image {
     width: 80px;
     height: 80px;
     margin-left: 10px;
     margin-right: 0px;
 }
+
 
 .findButton {
     background-color: $colorMain;
@@ -115,4 +128,34 @@ $colorSecond: rgb(181, 56, 56);
     height: 29px;
     margin-right: 43px;
     cursor: pointer;
+}
+
+//@media rules
+
+@media only screen and (max-width: 1290px) {
+    .tabContainer {
+        display: none;
+    }
+
+    .mainNav {
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .signIn {
+        margin: 0px;
+    }
+
+    .findButton {
+        margin-left: 0px;
+    }
+    .findButtonContainer {
+        text-align: center;
+        margin: auto;
+    }
+
+    .menu {
+        display: inline
+    }
+
 }

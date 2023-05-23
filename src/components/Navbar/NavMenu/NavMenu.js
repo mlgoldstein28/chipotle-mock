@@ -17,6 +17,7 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
             setHide(1)
         }
     }
+    
 
     return (
         <div className={`${navMenuDisplay ? styles.display : `d-none`} ${navMenuDisplay === 1 ? styles.hide : null}`}>

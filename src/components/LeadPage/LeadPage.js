@@ -17,12 +17,12 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
                     autoplay=""
                     muted 
                     loop 
-                    className={`w-100 ${styles.vid}`}
+                    className={`${styles.vid}`}
                     src={videoPastor} 
                     type="video/mp4"  
                       >
                 </video>
-                <div className={`text-center container ${styles.vidText} ${display ? styles.showHide : null}`}>
+                <div className={`container ${styles.vidText} ${display ? styles.showHide : null}`}>
                   <div className={`${styles.new}`}>NEW</div>
                   <div className={`${styles.vidHead}`}>
                     <h1 className={`${styles.chicken}`}>CHICKEN</h1>
@@ -34,18 +34,20 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
                   <a href="#menu" className={`text-decoration-none`}><div className={`${styles.orderButton}`}>ORDER NOW</div></a>
                 </div>
             </div>
-            <div className="text-center mt-1 mb-1">
-              <div className={`text-center d-flex justify-content-center`}>
+            <div className={`d-flex flex-wrap mt-1 justify-content-center m-auto`}>
+              <div className={`d-flex justify-content-center m-0`}>
                 <img src={chipBadge} alt="" className={`${styles.badge}`}/>
                 <p className={` ${styles.subText}`}>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</p>
+              </div>
+              <div className="d-flex flex-wrap ms-3 mt-0 text-center">
                 <button onClick={handleClickAcc} className={styles.account}>CREATE AN ACCOUNT</button>
-                <div className={styles.subText} id="menu">
+                  <div className={styles.subText} id="menu">
                     <span className={styles.or}> OR </span>
-                    <a onClick={handleClick}className={styles.signIn}> SIGN IN</a>
-                </div>
+                    <a onClick={handleClick} className={styles.signIn}> SIGN IN</a>
+                  </div>
               </div>
             </div>
-            <hr className="m-0"/>
+            <hr className="m-2"/>
         </div>
     )
 }

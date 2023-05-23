@@ -6,6 +6,7 @@ $colorThird: rgb(192, 145, 27);
 
 .vid {
  object-fit: fill;
+ width: 100%;
 }
 
 .vidContainer {
@@ -22,6 +23,7 @@ $colorThird: rgb(192, 145, 27);
 
 .vidText {
     font-family: 'Passion One';
+    text-align: center;
     color: white;
     font-weight: bold;
     max-width: 100%;
@@ -34,12 +36,13 @@ $colorThird: rgb(192, 145, 27);
 
 .new {
     display: block;
-    width: 8%;
+    width: 100px;
+    line-height: 30px;
     border: 4px solid white;
     padding: 3px 10px 3px 10px;
     margin: auto;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 4px
 }
 
@@ -92,8 +95,9 @@ a:hover {
     font-size: 25px;
     font-weight: bold;
     padding: 0px;
-    margin-top: 18px;
-    margin-left: 10px
+    margin-left: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px
 }
 
 .account {
@@ -103,8 +107,7 @@ a:hover {
     font-weight: bold;
     margin-left: 15px;
     margin-right: 10px;
-    margin-top: 24px;
-    padding: 8px;
+    margin-top: 25px;
     border: 1px solid $colorMain;
     line-height: 5px;
     height: 27px;
@@ -129,4 +132,9 @@ a:hover {
 .signIn:hover {
     cursor: pointer;
     color: $colorThird
+}
+
+
+@media only screen and (max-width: 945px) {
+
 }

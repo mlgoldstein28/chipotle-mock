@@ -13,17 +13,17 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
       setTimeout(() => {
         setHide(1)
       }, 500)
-      
+  }
+
+  const handleExit = () => {
+    setDisplay('shrink');
+    document.body.style.overflow = 'visible';
+
   }
     return (
-        <div className={`${display ? styles.display : `d-none`}`}>
+        <div className={`${display ? styles.display : `d-none`} ${display === 'shrink' ? styles.shrink : null}`}>
           <div>
-          <FontAwesomeIcon icon={faX} onClick={(() => {
-              setDisplay(false);
-              setHide(false);
-              setSlide(false);
-              document.body.style.overflow='visible'
-            })} className={styles.x}/>
+          <FontAwesomeIcon icon={faX} onClick={handleExit} className={styles.x}/>
           </div>
           <div>
               <div className="text-center">

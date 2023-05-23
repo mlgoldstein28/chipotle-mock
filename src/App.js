@@ -9,6 +9,7 @@ import MenuItems from './components/MenuItems/MenuItems';
 import SignIn from './components/Account/SignIn/SignIn.js';
 import ShoppingBag from './components/ShoppingBag/ShoppingBag';
 import UnderConstruction from './components/UnderConstruction/UnderConstruction';
+import NavMenu from './components/Navbar/NavMenu/NavMenu';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
@@ -33,6 +34,7 @@ function Home() {
   const [display, setDisplay] = useState(false);
   const [hide, setHide] = useState(false);
   const [bagDisplay, setBagDisplay] = useState(false);
+  const [navMenuDisplay, setNavMenuDisplay] = useState('');
 
   const handleClick = (event) => {
     setDisplay(true);
@@ -47,6 +49,14 @@ function Home() {
     document.body.style.overflow = "hidden";
   }
 
+  const handleNavMenu = (event) => {
+    setNavMenuDisplay(true);
+    window.scrollTo(0,0);
+    document.body.style.overflow = 'hidden'
+    console.log(navMenuDisplay);
+  }
+
+
   return (
     <div className="App">
       <SignIn display={display}
@@ -54,13 +64,17 @@ function Home() {
               hide={hide}
               setHide={setHide} />
       <ShoppingBag bagDisplay={bagDisplay}
-                   setBagDisplay={setBagDisplay}
-                   />
+                   setBagDisplay={setBagDisplay} />
+      <NavMenu navMenuDisplay={navMenuDisplay}
+              setNavMenuDisplay={setNavMenuDisplay}
+              setDisplay={setDisplay} 
+              setHide={setHide}/>
       <div className={`${bagDisplay ? styles.blur : null}`}>
         <div className={bagDisplay ? styles.dim : styles.hide}></div>
         <Navbar handleClick={handleClick} 
                 handleBag={handleBag}
                 bagDisplay={bagDisplay}
+                handleNavMenu={handleNavMenu}
                 />
         <LeadPage display={display}
                   setDisplay={setDisplay}

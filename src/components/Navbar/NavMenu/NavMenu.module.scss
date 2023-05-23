@@ -2,9 +2,6 @@ $colorMain: rgb(74,9,9);
 $colorSecond: rgb(181, 56, 56);
 $colorThird: rgb(192, 145, 27);
 
-* {
-    overflow: hidden;
-}
 
 @keyframes scale {
     from {transform: scale(0);opacity: 0}

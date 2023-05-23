@@ -34,7 +34,7 @@ function Home() {
   const [display, setDisplay] = useState(false);
   const [hide, setHide] = useState(false);
   const [bagDisplay, setBagDisplay] = useState(false);
-  const [navMenuDisplay, setNavMenuDisplay] = useState('');
+  const [navMenuDisplay, setNavMenuDisplay] = useState(false);
 
   const handleClick = (event) => {
     setDisplay(true);

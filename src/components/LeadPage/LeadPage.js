@@ -4,10 +4,12 @@ import styles from './LeadPage.module.scss';
 import chipBadge from '../../media/chipBadge.png'
 
 const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
+
   const handleClickAcc = () => {
-    setHide(1);
+    setHide(true);
     setDisplay(true);
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    document.body.style.overflow = 'hidden';
   }
 
     return(
@@ -22,7 +24,7 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
                     type="video/mp4"  
                       >
                 </video>
-                <div className={`container ${styles.vidText} ${display ? styles.showHide : null}`}>
+                <div className={`container ${styles.vidText} ${display ? styles.hide : null} ${display === 'shrink' ? styles.show : null}`}>
                   <div className={`${styles.new}`}>NEW</div>
                   <div className={`${styles.vidHead}`}>
                     <h1 className={`${styles.chicken}`}>CHICKEN</h1>

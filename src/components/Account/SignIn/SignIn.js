@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import styles from './SignIn.module.scss';
 import badge from '../../../media/chipBadge.png';
 import CreateAccount from '../CreateAccount/CreateAccount';
@@ -8,6 +8,8 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 const SignIn = ({display, setDisplay, setHide, hide}) => {
   const [slide, setSlide] = useState(false);
 
+  //Slides in Account Page, Hides Sign In Page
+
   const handleClickAccount = (event) => {
       setSlide(true);
       setTimeout(() => {
@@ -15,12 +17,17 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
       }, 500)
   }
 
+  //see Key 
+
   const handleExit = () => {
     setDisplay('shrink');
+    setHide(false);
+    setSlide(false);
     document.body.style.overflow = 'visible';
-
   }
+
     return (
+      //When display is true, opening animation begins. When display === 'shrink', closing animation begins.
         <div className={`${display ? styles.display : `d-none`} ${display === 'shrink' ? styles.shrink : null}`}>
           <div>
           <FontAwesomeIcon icon={faX} onClick={handleExit} className={styles.x}/>
@@ -49,7 +56,8 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                     </div>
                   </div>
                 </div>
-              <CreateAccount slide={slide} 
+              <CreateAccount slide={slide}
+                             display={display}
                              hide={hide}/>
           </div>
         </div>

@@ -30,8 +30,12 @@ $colorThird: rgb(192, 145, 27);
     overflow: hidden;
 }
 
-.showHide {
+.hide {
     display: none;
+}
+
+.show {
+    display: block;
 }
 
 .new {

@@ -40,7 +40,6 @@ function Home() {
     setDisplay(true);
     document.body.style.overflow = "hidden";
     window.scrollTo(0, 0);
-    console.log(display);
   }
 
   const handleBag = (event) => {
@@ -53,7 +52,6 @@ function Home() {
     setNavMenuDisplay(true);
     window.scrollTo(0,0);
     document.body.style.overflow = 'hidden'
-    console.log(navMenuDisplay);
   }
 
 

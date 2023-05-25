@@ -6,25 +6,36 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 
 const SignIn = ({display, setDisplay, setHide, hide}) => {
-  const [slide, setSlide] = useState(false);
 
-  //Slides in Account Page, Hides Sign In Page
+  //Sign In Features
+      //Event Handler for Username Requirements
+          
+      //Event Handler for Password Requirements
 
-  const handleClickAccount = (event) => {
-      setSlide(true);
-      setTimeout(() => {
-        setHide(1)
-      }, 500)
-  }
+      //Event Handler for Submission Request
 
-  //see Key 
+  
+  //Handling Switching/Canceling Pages
 
-  const handleExit = () => {
-    setDisplay('shrink');
-    setHide(false);
-    setSlide(false);
-    document.body.style.overflow = 'visible';
-  }
+    //Slides in Account Page, Hides Sign In Page
+      const [slide, setSlide] = useState(false);
+      const handleClickAccount = (event) => {
+        setSlide(true);
+        setTimeout(() => {
+          setHide(1)
+          }, 500)
+      }
+
+    //see Key 
+    const [labelAnimation, setLabelAnimation] = useState(false)
+
+      const handleExit = () => {
+        setDisplay('shrink');
+        setHide(false);
+        setSlide(false);
+        setLabelAnimation(false);
+        document.body.style.overflow = 'visible';
+      }
 
     return (
       //When display is true, opening animation begins. When display === 'shrink', closing animation begins.
@@ -58,7 +69,9 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                 </div>
               <CreateAccount slide={slide}
                              display={display}
-                             hide={hide}/>
+                             hide={hide}
+                             setLabelAnimation={setLabelAnimation}
+                             labelAnimation={labelAnimation}/>
           </div>
         </div>
     )

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styles from './CreateAccount.module.scss';
+import TextInput from '../TextInput/TextInput';
 
 const CreateAccount = ({slide, hide}) => {
 
@@ -37,14 +38,10 @@ const CreateAccount = ({slide, hide}) => {
                 <h1 className={styles.header}>CREATE AN ACCOUNT</h1>
                 <p className={styles.subHeader}>Create an account so you can get rewards <br/>and order your favorites even faster.</p>
                     <form className={''}>
-                        <label className="">First Name</label>
-                        <input onChange={handleFirst} type="text" className={`w-100 ${styles.inputText}`} required />
-                        <label className={''}>Last Name</label>
-                        <input onChange={handleLast} type="text" className={`w-100 ${styles.inputText}`} required />
-                        <label>Email</label>
-                        <input onChange={handleEmail} type="email" className={`w-100 ${styles.inputText}`} required />
-                        <label>Password</label>
-                        <input onChange={handlePassword} type="password" className={`w-100 ${styles.inputText}`} required />
+                        <TextInput type="text" label="First Name"/>
+                        <TextInput type="text" label="Last Name" />
+                        <TextInput type="email" label="Email" />
+                        <TextInput type="password" label="Password" />
                         <p className={styles.passReq}>Create a password with these requirements: <br /> ABC   abc   123   !@%   8 characters</p>
                         <button onClick={handleSubmit} type="submit" className={styles.button}>CREATE AN ACCOUNT</button>
                     </form>

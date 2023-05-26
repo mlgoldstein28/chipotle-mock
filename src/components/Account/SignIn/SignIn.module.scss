@@ -77,25 +77,14 @@ form {
     margin-bottom: 40px;
 }
 
-label {
-    font-size: 14px;
-    color: grey;
-    padding: 0px;
-    display: block;
-}
-
 .inputText {
     border: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.618);
-    height: 22px;
-    margin-bottom: 15px;
-    margin-top: 0px;
-    padding-top: 0px;
-    display: block;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.371);
+    border-radius: 0%;
 }
 
-.inputText:focus {
-    outline: none
+.inputText:focus{
+    border-bottom: 1px solid rgba(5, 5, 5, 0.371);
 }
 
 .button {

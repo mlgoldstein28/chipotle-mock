@@ -2,20 +2,12 @@ import { useState } from 'react';
 import styles from './SignIn.module.scss';
 import badge from '../../../media/chipBadge.png';
 import CreateAccount from '../CreateAccount/CreateAccount';
+import TextInput from '../TextInput/TextInput';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 
 const SignIn = ({display, setDisplay, setHide, hide}) => {
 
-  //Sign In Features
-      //Event Handler for Username Requirements
-          
-      //Event Handler for Password Requirements
-
-      //Event Handler for Submission Request
-
-  
-  //Handling Switching/Canceling Pages
 
     //Slides in Account Page, Hides Sign In Page
       const [slide, setSlide] = useState(false);
@@ -26,14 +18,11 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
           }, 500)
       }
 
-    //see Key 
-    const [labelAnimation, setLabelAnimation] = useState(false)
 
       const handleExit = () => {
         setDisplay('shrink');
         setHide(false);
         setSlide(false);
-        setLabelAnimation(false);
         document.body.style.overflow = 'visible';
       }
 
@@ -51,10 +40,14 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                 <div className={`container ${styles.formContainer}`}>
                     <h1 className={styles.head}>SIGN IN</h1>
                     <form className={''}>
-                        <label>Email</label>
-                        <input type="email" className={`w-100 ${styles.inputText}`}></input>
-                        <label>Password</label>
-                        <input type="password" className={`w-100 ${styles.inputText}`}></input>
+                      <div className={`form-floating mb-1`}>
+                        <input className={`${styles.inputText} form-control shadow-none`} id="floatingInput" placeholder="something"/>
+                        <label className={`fs-6 me-3`} for="floatingInput">Email</label>
+                      </div>
+                      <div className={`form-floating mb-1`}>
+                        <input type="text" className={`${styles.inputText} form-control shadow-none`} id="floatingInput" placeholder="something"/>
+                        <label type="password" className={`fs-6 me-3`} for="floatingInput">Password</label>
+                      </div>
                         <button className={styles.button}>SIGN IN</button>
                         <hr />
                     </form>
@@ -63,15 +56,14 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                         <h1 className={styles.createHead}>NOT A MEMBER?</h1>
                         <h3 className={styles.createSubHead}>JOIN REWARDS. GET REWARDED.</h3>
                       </div>
-                        <button onClick={handleClickAccount} className={styles.createButton}>CREATE AN ACCOUNT</button>
+                      <button onClick={handleClickAccount} className={styles.createButton}>CREATE AN ACCOUNT</button>
                     </div>
-                  </div>
                 </div>
+              </div>
               <CreateAccount slide={slide}
                              display={display}
                              hide={hide}
-                             setLabelAnimation={setLabelAnimation}
-                             labelAnimation={labelAnimation}/>
+                            />
           </div>
         </div>
     )

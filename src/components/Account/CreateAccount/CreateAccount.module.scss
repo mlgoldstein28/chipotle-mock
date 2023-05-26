@@ -25,6 +25,7 @@ $colorThird: rgb(192, 145, 27);
     transition-timing-function: ease-in;
 }
 
+//DOM
 
 .header {
     font-weight: bold;
@@ -42,27 +43,12 @@ $colorThird: rgb(192, 145, 27);
     color: rgba(62, 16, 16, 0.544);
 }
 
+
 .passReq {
     text-align: center;
     font-size: 16px;
     line-height: 16px;
     color: rgba(62, 16, 16, 0.544);
-}
-
-.inputText {
-    border: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.618);
-    height: 22px;
-    margin-bottom: 15px;
-    margin-top: 0px;
-    padding-top: 0px;
-    z-index: 9999;
-    display: block;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.inputText:focus {
-    outline: none
 }
 
 .button {

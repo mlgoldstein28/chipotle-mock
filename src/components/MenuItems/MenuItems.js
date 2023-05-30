@@ -15,7 +15,7 @@ import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
 const MenuItems = () => {
     return (
     <div>
-        <div className="row m-auto w-75">
+        <div className="row m-auto mt-3 w-100">
             <div className={`col-lg-4 text-center ${styles.menuItem}`}>
                 <div className="pb-2">
                   <img src={burrito} className={styles.image} alt="Burrito"/>

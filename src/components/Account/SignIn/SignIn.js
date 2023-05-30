@@ -2,7 +2,6 @@ import { useState } from 'react';
 import styles from './SignIn.module.scss';
 import badge from '../../../media/chipBadge.png';
 import CreateAccount from '../CreateAccount/CreateAccount';
-import TextInput from '../TextInput/TextInput';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 

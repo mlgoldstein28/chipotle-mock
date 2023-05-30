@@ -17,9 +17,7 @@ $colorThird: rgb(192, 145, 27);
     }
 
     .image {
-        width: 95%;
-        height: 45%;
-        margin-bottom: 0px
+        transform: scale(1.1);
     }
 
 
@@ -27,8 +25,8 @@ $colorThird: rgb(192, 145, 27);
 
 
 .image {
-    width: 90%;
-    height: 40%;
+    width: 70%;
+    height: 20%;
     margin-bottom: 10px
 }
 
@@ -45,4 +43,19 @@ $colorThird: rgb(192, 145, 27);
     font-size: 24px;
     font-weight: bold;
     opacity: 0
+}
+
+@media only screen and (max-width: 1000px) {
+    .menuItem {
+        width: 100%;
+    }
+
+    .image {
+        width: 35%;
+        height: 15%
+    }
+
+    .header {
+        font-size: 26px;
+    }
 }

@@ -39,7 +39,6 @@ function Home() {
   const handleClick = (event) => {
     setDisplay(true);
     document.body.style.overflow = "hidden";
-    document.body.classList.add = "no-scroll"
     window.scrollTo(0, 0);
   }
 
@@ -52,13 +51,13 @@ function Home() {
   const handleNavMenu = (event) => {
     setNavMenuDisplay(true);
     window.scrollTo(0,0);
-    document.body.style.overflow = 'hidden';
-    document.body.classList.add = "no-scroll";
+    document.body.style.overflow = "hidden"
+
   }
 
 
   return (
-    <div className="App">
+    <div className="App" id="App">
       <SignIn display={display}
               setDisplay={setDisplay}
               hide={hide}

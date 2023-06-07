@@ -9,7 +9,6 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
     const handleExit = (event) => {
         setNavMenuDisplay(1);
         document.body.style.overflow = 'visible';
-        document.body.classList.remove = "no-scroll"
         if (event.currentTarget.id === 'signIn' ) {
             setDisplay(true)
         }

@@ -17,7 +17,7 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
             <div className={`ratio ${styles.vidContainer}`}>
                 <video
                     playsInline
-                    autoplay=""
+                    autoplay="true"
                     muted 
                     loop 
                     className={`${styles.vid}`}

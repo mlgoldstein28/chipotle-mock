@@ -36,6 +36,7 @@ function Home() {
   const [bagDisplay, setBagDisplay] = useState(false);
   const [navMenuDisplay, setNavMenuDisplay] = useState(false);
 
+
   const handleClick = (event) => {
     setDisplay(true);
     document.body.style.overflow = "hidden";
@@ -52,7 +53,6 @@ function Home() {
     setNavMenuDisplay(true);
     window.scrollTo(0,0);
     document.body.style.overflow = "hidden"
-
   }
 
 

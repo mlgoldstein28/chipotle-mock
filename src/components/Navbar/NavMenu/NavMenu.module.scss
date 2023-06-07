@@ -4,7 +4,7 @@ $colorThird: rgb(192, 145, 27);
 
 @keyframes scale {
     from {transform: scale(0);opacity: 0}
-    to {transform: scale(1); opacity: 1}
+    to {transform: scale(1); opacity: 1; overflow: hidden;}
 }
 
 
@@ -17,6 +17,7 @@ $colorThird: rgb(192, 145, 27);
     height: 100vh;
     z-index: 9999;
     overflow: hidden;
+
 }
 
 @keyframes scaleDown {

@@ -69,6 +69,11 @@ $colorThird: rgb(192, 145, 27);
     font-family: 'Passion One';
 }
 
+.vidDescript {
+    font-size: 25px;
+    line-height: 28px;
+}
+
 .orderButton {
     width: 370px;
     margin: auto;
@@ -156,4 +161,16 @@ a:hover {
     .account {
         margin: auto;
     }
+
+    .chicken {
+        font-size: 80px;
+        line-height: 50px;
+    }
+    .alPastor {
+        font-size: 60px
+    }
+    .vidDescript {
+        font-size: 20px
+    }
+
 }

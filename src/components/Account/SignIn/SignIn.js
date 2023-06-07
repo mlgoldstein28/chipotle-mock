@@ -50,7 +50,7 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                         <button className={styles.button}>SIGN IN</button>
                         <hr />
                     </form>
-                    <div className="text-center">
+                    <div className={styles.bottomTextContainer}>
                       <div className="">
                         <h1 className={styles.createHead}>NOT A MEMBER?</h1>
                         <h3 className={styles.createSubHead}>JOIN REWARDS. GET REWARDED.</h3>

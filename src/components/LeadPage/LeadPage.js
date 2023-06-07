@@ -32,7 +32,7 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
                     <h1 className={`${styles.alPastor}`}>AL PASTOR</h1>
                   </div>
                   <h2 className="fw-bold">WHERE FIRE MEETS FLAVOR</h2>
-                  <p className="fs-3">The rich flavor of Chicken Al Pastor delivers <br/> the right amount of heat 
+                  <p className={styles.vidDescript}>The rich flavor of Chicken Al Pastor delivers <br/> the right amount of heat 
                     balanced with a <br/> splash of pineapple, fresh lime, and cilantro.</p>
                   <a href="#menu" className={`text-decoration-none`}><div className={`${styles.orderButton}`}>ORDER NOW</div></a>
                 </div>

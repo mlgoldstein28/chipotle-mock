@@ -47,8 +47,8 @@ window.addEventListener('scroll', handleScroll)*/
           </div>
             <div className={styles.findButtonContainer}>
               <button type="button" className={`${styles.findButton}`}>
-                <span className=""><img src={secondaryLogo} alt="logo" className={`${styles.secondLogo} m-auto`} /></span>
-                <span className="fs-4"> | </span><span className={styles.buttonText}>FIND A CHIPOTLE</span>
+                <img src={secondaryLogo} alt="logo" className={`${styles.secondLogo} m-0`} />
+                <span className="fs-5"> | </span><span className={styles.buttonText}>FIND A CHIPOTLE</span>
               </button>
             </div>
             <img onClick={handleBag} src={bag} alt='cart' className={styles.bag}/>

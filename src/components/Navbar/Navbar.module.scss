@@ -72,7 +72,6 @@ $colorSecond: rgb(181, 56, 56);
     color: white;
     border-radius: 25px 25px;
     margin-left: 55px;
-    padding-right: 25px;
     border: none;
     width: 200px;
     height: 41px;
@@ -90,7 +89,6 @@ $colorSecond: rgb(181, 56, 56);
 .buttonText {
     font-size: .67em;
     font-family: 'hubot-sans';
-    margin-left: 5px;
 }
 
 .findButton:hover, .findButton:focus {
@@ -168,11 +166,12 @@ $colorSecond: rgb(181, 56, 56);
     }
     .findButton {
         margin: none;
-        width: 160px
+        width: 130px;
+        margin-left: none
     }
 
     .buttonText {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .secondLogo {

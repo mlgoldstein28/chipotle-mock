@@ -9,6 +9,7 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
     const handleExit = (event) => {
         setNavMenuDisplay(1);
         document.body.style.overflow = 'visible';
+        document.body.classList.remove = "no-scroll"
         if (event.currentTarget.id === 'signIn' ) {
             setDisplay(true)
         }
@@ -20,7 +21,6 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
     
 
     return (
-    <div className={styles.navMenuContainer}>
         <div className={`${navMenuDisplay ? styles.display : `d-none`} ${navMenuDisplay === 1 ? styles.hide : null}`}>
             <div className={styles.header}>
                 <FontAwesomeIcon icon={faX} onClick={handleExit} className={styles.x}/>
@@ -47,7 +47,6 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
                 </div>
             </div>
         </div>
-    </div>
     )
 }
 

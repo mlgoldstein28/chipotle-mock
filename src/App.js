@@ -39,6 +39,7 @@ function Home() {
   const handleClick = (event) => {
     setDisplay(true);
     document.body.style.overflow = "hidden";
+    document.body.classList.add = "no-scroll"
     window.scrollTo(0, 0);
   }
 
@@ -51,7 +52,8 @@ function Home() {
   const handleNavMenu = (event) => {
     setNavMenuDisplay(true);
     window.scrollTo(0,0);
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden';
+    document.body.classList.add = "no-scroll";
   }
 
 

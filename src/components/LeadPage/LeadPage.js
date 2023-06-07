@@ -42,7 +42,7 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
                 <img src={chipBadge} alt="" className={`${styles.badge}`}/>
                 <p className={` ${styles.subText}`}>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</p>
               </div>
-              <div className="d-flex flex-wrap ms-3 mt-0 text-center">
+              <div className="d-flex flex-wrap mt-0 text-center">
                 <button onClick={handleClickAcc} className={styles.account}>CREATE AN ACCOUNT</button>
                   <div className={styles.subText} id="menu">
                     <span className={styles.or}> OR </span>

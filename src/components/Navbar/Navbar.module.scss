@@ -88,7 +88,7 @@ $colorSecond: rgb(181, 56, 56);
 }
 
 .buttonText {
-    font-size: 12px;
+    font-size: .67em;
     font-family: 'hubot-sans';
     margin-left: 5px;
 }
@@ -125,6 +125,7 @@ $colorSecond: rgb(181, 56, 56);
     width: 20px;
     height: 29px;
     margin-right: 43px;
+    margin-left: 60px;
     cursor: pointer;
 }
 
@@ -158,8 +159,15 @@ $colorSecond: rgb(181, 56, 56);
 
 }
 
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 600px) {
     .signIn {
         display: none
+    }
+    .bag {
+        margin: none;
+    }
+    .findButton {
+        margin: none;
+        width: 190px
     }
 }

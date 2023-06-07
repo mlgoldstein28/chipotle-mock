@@ -2,11 +2,15 @@ $colorMain: rgb(74,9,9);
 $colorSecond: rgb(181, 56, 56);
 $colorThird: rgb(192, 145, 27);
 
+.navMenuContainer {
+    overflow: hidden;
+}
 
 @keyframes scale {
     from {transform: scale(0);opacity: 0}
     to {transform: scale(1); opacity: 1}
 }
+
 
 .display {
     animation-name: scale;
@@ -156,7 +160,7 @@ $colorThird: rgb(192, 145, 27);
 
 @media screen and (max-width: 700px) {
     .img {
-        width: 400px;
+        width: 360px;
         height: 100px;
     }
 

@@ -59,10 +59,12 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                     </div>
                 </div>
               </div>
-              <CreateAccount slide={slide}
+              <div className={styles.formContainer}>
+                <CreateAccount slide={slide}
                              display={display}
                              hide={hide}
                             />
+              </div>
           </div>
         </div>
     )

@@ -46,7 +46,7 @@ window.addEventListener('scroll', handleScroll)*/
             <NavLink to="/nutrition"><div className={`nav-item nav-link ${styles.tabs} me-2`}>NUTRITION</div></NavLink>
           </div>
             <div className={styles.findButtonContainer}>
-              <button type="button" className={`${styles.findButton} fs-6`}>
+              <button type="button" className={`${styles.findButton}`}>
                 <span className=""><img src={secondaryLogo} alt="logo" className={`${styles.secondLogo} m-auto`} /></span>
                 <span className="fs-4"> | </span><span className={styles.buttonText}>FIND A CHIPOTLE</span>
               </button>

@@ -75,7 +75,7 @@ $colorThird: rgb(192, 145, 27);
 }
 
 .orderButton {
-    width: 370px;
+    width: 350px;
     margin: auto;
     line-height: 55px;
     background-color: rgb(185, 36, 36);
@@ -173,4 +173,7 @@ a:hover {
         font-size: 20px
     }
 
+    .orderButton {
+        width: 300px
+    }
 }

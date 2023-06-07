@@ -20,6 +20,7 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
     
 
     return (
+    <div className={styles.navMenuContainer}>
         <div className={`${navMenuDisplay ? styles.display : `d-none`} ${navMenuDisplay === 1 ? styles.hide : null}`}>
             <div className={styles.header}>
                 <FontAwesomeIcon icon={faX} onClick={handleExit} className={styles.x}/>
@@ -46,6 +47,7 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
                 </div>
             </div>
         </div>
+    </div>
     )
 }
 

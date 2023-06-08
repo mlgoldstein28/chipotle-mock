@@ -11,12 +11,17 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
         document.body.style.overflow = 'visible';
         if (event.currentTarget.id === 'signIn' ) {
             setDisplay(true)
+            document.body.style.touchAction = 'none';
         }
         else if (event.currentTarget.id === 'createAccountButton') {
             setDisplay(true);
-            setHide(1)
+            setHide(1);
+            document.body.style.touchAction = 'none';
         }
-        document.body.style.touchAction = 'auto';
+        else {
+            document.body.style.overflow = 'visible';
+            document.body.style.touchAction = 'auto'
+        }
     }
     
 

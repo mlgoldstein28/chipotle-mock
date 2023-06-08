@@ -41,7 +41,10 @@ function Home() {
     setDisplay(true);
     document.body.style.overflow = "hidden";
     window.scrollTo(0, 0);
-    document.body.style.WebkitOverflowScrolling = "touch"
+    document.body.style.webkitOverflowScrolling = "touch"
+    document.body.ontouchstart = (e) => {
+      e.preventDefault()
+    }
   }
 
   const handleBag = (event) => {
@@ -49,6 +52,9 @@ function Home() {
     setBagDisplay(true);
     document.body.style.overflow = "hidden";
     document.body.style.WebkitOverflowScrolling = "touch"
+    document.body.ontouchstart = (e) => {
+      e.preventDefault()
+    }
   }
 
   const handleNavMenu = (event) => {
@@ -56,6 +62,9 @@ function Home() {
     window.scrollTo(0,0);
     document.body.style.overflow = "hidden"
     document.body.style.WebkitOverflowScrolling = "touch"
+    document.body.ontouchstart = (e) => {
+      e.preventDefault()
+    }
   }
 
 

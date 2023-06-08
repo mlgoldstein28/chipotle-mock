@@ -1,14 +1,13 @@
 import styles from './NavMenu.module.scss';
 import foodFootprint from '../../../media/FoodFootprint.png';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faX} from '@fortawesome/free-solid-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
 const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
 
     const handleExit = (event) => {
         setNavMenuDisplay(1);
-        document.body.style.overflow = 'visible';
         if (event.currentTarget.id === 'signIn' ) {
             setDisplay(true)
             document.body.style.touchAction = 'none';
@@ -26,7 +25,7 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
     
 
     return (
-        <div className={`${navMenuDisplay ? styles.display : `d-none`} ${navMenuDisplay === 1 ? styles.hide : null}`}>
+        <div className={`${navMenuDisplay ? styles.display : 'd-none'} ${navMenuDisplay === 1 ? styles.hide : null}`}>
             <div className={styles.header}>
                 <FontAwesomeIcon icon={faX} onClick={handleExit} className={styles.x}/>
             </div>

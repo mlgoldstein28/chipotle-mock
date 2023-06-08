@@ -16,6 +16,7 @@ const NavMenu = ({navMenuDisplay, setNavMenuDisplay, setDisplay, setHide}) => {
             setDisplay(true);
             setHide(1)
         }
+        document.body.style.touchAction = 'auto';
     }
     
 

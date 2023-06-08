@@ -69,3 +69,9 @@ $colorThird: rgb(192, 145, 27);
 .button:hover {
     background-color: rgb(108, 39, 39);
 }
+
+@media screen and (max-width: 700px) {
+    .formContainer {
+        width: 90%
+    }
+}

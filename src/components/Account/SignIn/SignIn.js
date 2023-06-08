@@ -23,6 +23,7 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
         setHide(false);
         setSlide(false);
         document.body.style.overflow = 'visible';
+        document.body.style.touchAction = 'auto';
       }
 
     return (
@@ -59,7 +60,7 @@ const SignIn = ({display, setDisplay, setHide, hide}) => {
                     </div>
                 </div>
               </div>
-              <div className={`${styles.formContainer} m-auto`} >
+              <div className={`container ${styles.formContainer} m-auto`} >
                 <CreateAccount slide={slide}
                              display={display}
                              hide={hide}

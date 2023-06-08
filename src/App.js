@@ -40,6 +40,7 @@ function Home() {
   const handleClick = (event) => {
     setDisplay(true);
     document.body.style.overflow = "hidden";
+    document.body.style.touchAction = 'none';
     window.scrollTo(0, 0);
   }
 
@@ -47,6 +48,7 @@ function Home() {
     window.scrollTo(0,0);
     setBagDisplay(true);
     document.body.style.overflow = "hidden";
+    document.body.style.touchAction = 'none';
   }
 
   const handleNavMenu = (event) => {

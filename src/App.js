@@ -62,7 +62,7 @@ function Home() {
     window.scrollTo(0,0);
     document.body.style.overflow = "hidden"
     document.body.style.WebkitOverflowScrolling = "touch"
-    document.body.ontouchstart = (e) => {
+    document.body.ontouchmove = (e) => {
       e.preventDefault()
     }
   }

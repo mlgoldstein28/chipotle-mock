@@ -41,18 +41,21 @@ function Home() {
     setDisplay(true);
     document.body.style.overflow = "hidden";
     window.scrollTo(0, 0);
+    document.body.style.WebkitOverflowScrolling = "touch"
   }
 
   const handleBag = (event) => {
     window.scrollTo(0,0);
     setBagDisplay(true);
     document.body.style.overflow = "hidden";
+    document.body.style.WebkitOverflowScrolling = "touch"
   }
 
   const handleNavMenu = (event) => {
     setNavMenuDisplay(true);
     window.scrollTo(0,0);
     document.body.style.overflow = "hidden"
+    document.body.style.WebkitOverflowScrolling = "touch"
   }
 
 

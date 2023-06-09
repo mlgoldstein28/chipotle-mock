@@ -12,3 +12,4 @@ On the Homepage, a video element was utilized in displaying the mp4, which autop
 For the Menu Items, Boostrap grid was used for placement, and scale and hover techniques were used for the UX. 
 The Menu Items are not working links.
 
+ ***This site is mobile responsive***. 

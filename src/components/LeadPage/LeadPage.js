@@ -10,6 +10,7 @@ const LeadPage = ({setDisplay, display, setHide, handleClick}) => {
     setDisplay(true);
     window.scrollTo(0,0);
     document.body.style.overflow = 'hidden';
+    document.body.style.touchAction = 'none';
   }
 
     return(

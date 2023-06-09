@@ -39,7 +39,7 @@ function Home() {
 
   const handleClick = (event) => {
     setDisplay(true);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
     document.body.style.touchAction = 'none';
     window.scrollTo(0, 0);
   }
@@ -47,14 +47,14 @@ function Home() {
   const handleBag = (event) => {
     window.scrollTo(0,0);
     setBagDisplay(true);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
     document.body.style.touchAction = 'none';
   }
 
   const handleNavMenu = (event) => {
     setNavMenuDisplay(true);
     window.scrollTo(0,0);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
     document.body.style.touchAction = 'none';
   }
 

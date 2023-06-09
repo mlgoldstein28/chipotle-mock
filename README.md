@@ -1,4 +1,4 @@
-#Chipotle Clone
+# Chipotle Clone
 
 This project is a Chipotle-Clone site, implemented with **React**. 
 I created this mock site in order to strengthen my design skills and to become familiar with developing sites from a wireframe. 

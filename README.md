@@ -2,7 +2,7 @@
 
 This project is a Chipotle-Clone site, implemented with **React**. 
 I created this mock site in order to strengthen my design skills and to become familiar with developing sites from a wireframe. 
-A combination of **Bootstrap and SASS** were utilized to mimic the finer details and to execute their designed UX and UI.
+A combination of **Bootstrap and SCSS** were utilized to mimic the finer details and to execute their designed UX and UI.
 
 On the navbar, the links are working, however, the pages, besides the icons, all direct to one “Under Construction” page. 
 There is a responsive menu when the window is condensed. 
